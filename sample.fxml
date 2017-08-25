@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="514.0" prefWidth="600.0" style="-fx-background-color: ff9900;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <GridPane layoutX="113.0" layoutY="100.0" prefHeight="315.0" prefWidth="375.0">
+        <columnConstraints>
+          <ColumnConstraints />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="Casilla1" mnemonicParsing="false" onAction="#Colocarx" prefHeight="115.0" prefWidth="131.0" GridPane.columnIndex="1" />
+            <Button fx:id="Casilla2" mnemonicParsing="false" prefHeight="115.0" prefWidth="131.0" GridPane.columnIndex="2" />
+            <Button fx:id="Casilla3" mnemonicParsing="false" onAction="#Colocarx4" prefHeight="115.0" prefWidth="131.0" GridPane.columnIndex="3" />
+            <Button fx:id="Casilla4" mnemonicParsing="false" onAction="#Colocarx1" prefHeight="115.0" prefWidth="131.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="Casilla5" mnemonicParsing="false" onAction="#Colocarx2" prefHeight="115.0" prefWidth="131.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button fx:id="Casilla6" mnemonicParsing="false" prefHeight="115.0" prefWidth="131.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Button fx:id="Casilla7" mnemonicParsing="false" onAction="#Colocarx7" prefHeight="115.0" prefWidth="131.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button fx:id="Casilla8" mnemonicParsing="false" onAction="#Colocarx3" prefHeight="115.0" prefWidth="131.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Button fx:id="Casilla9" mnemonicParsing="false" prefHeight="115.0" prefWidth="131.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+      <Button fx:id="Btnnuevo" layoutX="12.0" layoutY="106.0" mnemonicParsing="false" onAction="#Limpiar" prefHeight="51.0" prefWidth="80.0" text="Nuevo" />
+      <Button fx:id="Btnsalir" layoutX="12.0" layoutY="167.0" mnemonicParsing="false" onAction="#Salir" prefHeight="51.0" prefWidth="80.0" text="Salir" />
+      <Label layoutX="99.0" layoutY="435.0" prefHeight="17.0" prefWidth="50.0" text="Player 1" />
+      <Label layoutX="99.0" layoutY="469.0" prefHeight="17.0" prefWidth="50.0" text="Player 2" />
+      <TextField fx:id="player1" layoutX="170.0" layoutY="431.0" prefHeight="17.0" prefWidth="24.0" text="0" />
+      <TextField layoutX="170.0" layoutY="465.0" prefHeight="17.0" prefWidth="24.0" text="0" />
+      <Label layoutX="230.0" layoutY="24.0" prefHeight="53.0" prefWidth="118.0" text=" Juego" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
